@@ -8,11 +8,13 @@ import { navbar } from './pages/navbar/navbar';
 import { NotFound } from './pages/not-found/not-found';
 
 export const routes: Routes = [
-    {path: '', component: Home},
-    {path: 'ContactUs', component: ContactUs},
-    {path: 'CourseDetails/:id', component: CourseDetails},
-    {path: 'CoursesList', component: CoursesList},
-    {path: 'Messeges', component: Messeges},
-    {path: '**', component: NotFound},
-    
+    { path: '', component: Home },
+    { path: 'ContactUs', component: ContactUs },
+    { path: 'CourseDetails/:id', component: CourseDetails },
+    { path: 'CoursesList', component: CoursesList },
+    { path: 'Messeges', component: Messeges },
+    { path: 'course-details/:id', component: CourseDetails },
+    { path: '**', component: NotFound },
+
+
 ];

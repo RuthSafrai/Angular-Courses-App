@@ -1,1 +1,15 @@
-<p>course-details works!</p>
+<section>
+<div *ngIf="course;else notFound">
+<h1>{{course.name}}</h1>
+<p>{{course.subject}}</p>
+<p>{{course.room}}</p>
+</div>
+
+
+<ng-template #notFound>
+
+    <p>הקורס לא נמצא</p>
+</ng-template>
+
+<a routerLink="/CoursesList">חזרה לרשימת הקורסים</a>
+</section>

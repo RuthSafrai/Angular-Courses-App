@@ -1,1 +1,7 @@
-<p>courses-list works!</p>
+<div *ngFor="let c of courses">
+    <h2>{{c.id}}</h2>
+    <h2>{{c.name}}</h2>
+    
+
+    <a [routerLink]="['/course-details',c.id]"> פרטים נוספים</a>
+</div>

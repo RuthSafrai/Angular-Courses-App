@@ -10,4 +10,25 @@ import { navbar } from './pages/navbar/navbar';
 })
 export class App {
   protected readonly title = signal('courses');
+
+  courses = [
+    {id : "1",
+      name: "אפיה",
+      NumberOfSessions : "5",
+      LecturerName : "מרים כהן"
+    },
+    {id : "2",
+      name: "תסרוקות",
+      NumberOfSessions : "75",
+      LecturerName : "תהילה לוי"
+    },{id : "3",
+      name: "בישול",
+      NumberOfSessions : "4",
+      LecturerName : "שרה כהן"
+    },{id : "4",
+      name: "איפור",
+      NumberOfSessions : "52",
+      LecturerName : "מרים כהן"
+    },
+  ]
 }
